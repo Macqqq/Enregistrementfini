@@ -1,0 +1,11 @@
+﻿<Window x:Class="enregistrement.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Enregistreur Audio" Height="350" Width="525">
+    <Grid>
+        <ComboBox x:Name="comboBoxDevices" Width="200" Height="30" Margin="10" VerticalAlignment="Top"/>
+        <Button x:Name="startButton" Content="Démarrer l'enregistrement" Click="startButton_Click" Height="50" Width="200" Margin="10" VerticalAlignment="Center"/>
+        <Button x:Name="stopButton" Content="Arrêter l'enregistrement" Click="stopButton_Click" Height="50" Width="200" Margin="10" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        <Label x:Name="statusLabel" Content="Statut" HorizontalAlignment="Center" Margin="10" VerticalAlignment="Bottom"/>
+    </Grid>
+</Window>
